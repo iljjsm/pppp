@@ -46,7 +46,7 @@ class PastSettings(BaseModel):
     """Configuration for past mode."""
 
     # pylint: disable=too-few-public-methods
-    delay: int = 0
+    delay: int = 7200
 
     @validator("delay")
     def validate_delay(cls, val):  # pylint: disable=no-self-use,no-self-argument
